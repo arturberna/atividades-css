@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Rede Social</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f3f4f6;
+        }
+        .profile {
+            width: 300px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            margin: 10px auto;
+        }
+        .bio {
+            font-size: 14px;
+            color: #555;
+        }
+        .post {
+            background-color: #fff;
+            margin: 15px 0;
+            padding: 15px;
+            border: 2px solid #ddd;
+            /* Alunos devem personalizar esta borda */
+        }
+        /* Código extra para animação */
+        .highlight {
+            animation: changeBorderColor 2s infinite;
+        }
+        @keyframes changeBorderColor {
+            0% { border-color: #FF6347; }
+            50% { border-color: #2A9D8F; }
+            100% { border-color: #FF6347; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile">
+        <div class="profile-photo" style="border: 3px solid black; border-radius: 50%;"></div>
+        <h2>Nome do Aluno</h2>
+        <p class="bio">Esta é a minha bio. Personalize-me!</p>
+    </div>
+
+    <div class="post">Postagem 1</div>
+    <div class="post">Postagem 2</div>
+    <div class="post">Postagem 3</div>
+    <div class="post highlight">Postagem em Destaque</div>
+
+</body>
+</html>
